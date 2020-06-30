@@ -1,0 +1,10 @@
+{
+  apps : [
+    {
+      name      : "freshbot-web",
+      script    : "npx",
+      interpreter: "none",
+      args: "serve"
+    }
+  ]
+}
