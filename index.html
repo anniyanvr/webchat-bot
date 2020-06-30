@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,29 +9,29 @@
             position: relative;
             min-height: 100%;
         }
-
+        
         body {
             margin: 0;
         }
-
+        
         .button {
             margin: 15px 15px 15px 15px;
             border-radius: 36px;
             width: 100%;
             height: 34px;
         }
-
+        
         #chatpanel {
             height: -webkit-fill-available;
             overflow: hidden;
         }
-
+        
         .webchat-div {
             height: 70px;
             background-color: #efefef;
             color: white;
         }
-
+        
         #webchat {
             position: fixed;
             right: 0;
@@ -40,7 +40,7 @@
             top: 76px;
             z-index: 1031;
         }
-
+        
         #leftmenu {
             margin: 10px 10px 10px 10px;
             background-color: #efefef;
@@ -79,7 +79,7 @@
                     dataType: "json",
                     processData: false,
                     headers: {
-                        "Authorization": "Bearer tLcX_DNvhX8.IKHr2lJ7Mw3Jw9iAvqoPmeMC2ExouWbyoFpqvdNh2ew"
+                        "Authorization": "Bearer 6hed58HH6eU.wlZz5zqac-IAyy24YfdR0CsMjSM8C3pcduecImJGiBo"
                     },
                     contentType: "application/json",
                     success: function(result) {
@@ -109,7 +109,7 @@
                     dataType: "json",
                     processData: false,
                     headers: {
-                        "Authorization": "Bearer tLcX_DNvhX8.IKHr2lJ7Mw3Jw9iAvqoPmeMC2ExouWbyoFpqvdNh2ew"
+                        "Authorization": "Bearer 6hed58HH6eU.wlZz5zqac-IAyy24YfdR0CsMjSM8C3pcduecImJGiBo"
                     },
                     contentType: "application/json",
                     success: function(result) {
@@ -218,7 +218,7 @@
 		
       window.WebChat.renderWebChat({
          directLine: window.WebChat.createDirectLine({
-            secret: 'tLcX_DNvhX8.IKHr2lJ7Mw3Jw9iAvqoPmeMC2ExouWbyoFpqvdNh2ew',
+            secret: '6hed58HH6eU.wlZz5zqac-IAyy24YfdR0CsMjSM8C3pcduecImJGiBo',
             webSocket: false // defaults to true
         }), userID: 'demo',
         username: 'Web Chat User',
@@ -233,7 +233,7 @@
                 // however, this is not a recommended practice and you should create and manage your tokens from the server. 
                 // You should never put the Direct Line secret in the browser or client app.
                 // https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication
-                const secret = 'AnSlEEfs6HM.ji5YyyyO3oIjtnCq-ciuyS9pJAeoSeSe9BNauCRCLmU';
+                const secret = '6hed58HH6eU.wlZz5zqac-IAyy24YfdR0CsMjSM8C3pcduecImJGiBo';
                 const res = await fetch('https://directline.botframework.com/v3/directline/tokens/generate', {
                     body: JSON.stringify({
                         user: {
